@@ -1,7 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 #header{
     width: 100%;
     height: 120px;
-    background-color: #ccc;
 }
 #main-banner{
     width: 100%;
@@ -26,22 +29,79 @@
 .container{
     margin: 0 auto;
     width: 1200px;
-    background: rgba(0,0,0,0.2);
     height: 100%;
 }
+/* 글로벌버튼 */
 #global-nav{
     width: 100%;
     height: 40px;
-    background-color: #a6a6a6;
+    background-color: #00203b;
 }
+#global-nav .top-left{
+    line-height: 40px;
+    float: left;
+}
+#global-nav .top-left a{
+    font-size: 0.95rem;
+    color: #fff
+}
+#global-nav .top-right{
+    line-height: 40px;
+    float: right;
+}
+#global-nav .top-right ul li{
+    float: left;
+    margin-right: 15px;
+}
+#global-nav .top-right ul li:last-child{
+    margin-right: 0;
+}
+#global-nav .top-right ul li a{
+    font-size: 0.95rem;
+    color: #fff;
+}
+/* 헤더 */
 #main-nav{
     width: 100%;
     height: 80px;
-    background-color: #8b8b8b;
+    background-color: #fff;
+    border-bottom: 1px solid #f8f9fa;
 }
-#global-nav .top-left a{
-    font-size: 16px;
+#main-nav .logo{
+    width: 280px;
+    height: 100%;
+    float: left;
 }
+#main-nav .logo a{
+    display: block;
+    margin-top: 22px;
+}
+#main-nav .logo a img{
+    width: 280px;
+    height: 36px;
+    object-position: left center;
+    object-fit: contain;
+}
+#main-nav .menu{
+    float: right;
+    height: 100%;
+}
+#main-nav .menu ul li{
+    float: left;
+    margin-right: 15px;
+    line-height: 80px;
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: bold;
+}
+#main-nav .menu ul li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+/* 콘텐츠 */
 .board{
     width: 590px;
     height: 360px;
